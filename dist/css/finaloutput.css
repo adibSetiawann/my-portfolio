@@ -1360,11 +1360,6 @@ body {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-dark {
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
-}
-
 .dark .dark\:shadow-slate-400 {
   --tw-shadow-color: #94a3b8;
   --tw-shadow: var(--tw-shadow-colored);
