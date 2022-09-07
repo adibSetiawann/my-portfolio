@@ -1335,6 +1335,11 @@ body {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-slate-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
@@ -1345,11 +1350,6 @@ body {
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1358,6 +1358,11 @@ body {
 .dark .dark\:text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .dark .dark\:shadow-slate-400 {
