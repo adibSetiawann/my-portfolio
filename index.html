@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,37 +9,37 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
       <div class="container">
-        <div class="flex items-center justify-between relative">
+        <div class="relative flex items-center justify-between">
           <div class="px-4">
-            <a href="#home" class="font-bold text-lg text-primary block py-6">Adib Setiawan</a>
+            <a href="#home" class="block py-6 text-lg font-bold text-primary">Adib Setiawan</a>
           </div>
           <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" class="block absolute right-4 lg:hidden">
-              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+            <button id="hamburger" name="hamburger" class="absolute right-4 block lg:hidden">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
               <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
             </button>
-            <nav id="navmenu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <nav id="navmenu" class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="flex text-base text-dark py-2 mx-8 group-hover:text-primary">Beranda</a>
+                  <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary">Beranda</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="flex text-base text-dark py-2 mx-8 group-hover:text-primary">Tentang Saya</a>
+                  <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary">Tentang Saya</a>
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="flex text-base text-dark py-2 mx-8 group-hover:text-primary">Portfolio</a>
+                  <a href="#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary">Portfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#clients" class="flex text-base text-dark py-2 mx-8 group-hover:text-primary">Clients</a>
+                  <a href="#clients" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary">Clients</a>
                 </li>
                 <li class="group">
-                  <a href="#blog" class="flex text-base text-dark py-2 mx-8 group-hover:text-primary">Blog</a>
+                  <a href="#blog" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary">Blog</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="flex text-base text-dark py-2 mx-8 group-hover:text-primary">Contact</a>
+                  <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -54,15 +54,15 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua, Saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Adib Setiawan</span></h1>
-            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Junior Programmer</h2>
-            <p class="font-medium text-secondary mb-10 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, in?</p>
-            <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+            <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua, Saya <span class="mt-1 block text-4xl font-bold text-dark lg:text-5xl">Adib Setiawan</span></h1>
+            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Junior Programmer</h2>
+            <p class="mb-10 font-medium leading-relaxed text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, in?</p>
+            <a href="#" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="mt-20 relative lg:mt-9 lg:right-0">
-              <img src="dist/img/profil.png" alt="me" class="max-w-full mx-auto w-52" />
-              <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+            <div class="relative mt-20 lg:right-0 lg:mt-9">
+              <img src="dist/img/profil.png" alt="me" class="mx-auto w-52 max-w-full" />
+              <span class="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-125">
                 <svg width="250" height="250" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="#06b6d4"
@@ -81,17 +81,17 @@
     <section id="about" class="pt-36 pb-32">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 lg:w-1/2">
-            <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Yuk Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis?</h2>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium sed aperiam ullam quisquam temporibus consequuntur optio quo natus?</p>
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark lg:text-4xl">Yuk Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis?</h2>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium sed aperiam ullam quisquam temporibus consequuntur optio quo natus?</p>
           </div>
           <div class="w-ful px-4 lg:w-1/2">
-            <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari Berteman</h3>
-            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, suscipit minima!</p>
+            <h3 class="mb-4 text-2xl font-semibold text-dark lg:pt-10 lg:text-3xl">Mari Berteman</h3>
+            <p class="mb-6 text-base font-medium text-secondary lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, suscipit minima!</p>
             <div class="flex items-center">
               <!-- facebook -->
-              <a href="https://www.facebook.com/adib.esteh23" target="_blank" class="w-9 h-9 mx-2 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://www.facebook.com/adib.esteh23" target="_blank" class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Facebook</title>
                   <path
@@ -100,7 +100,7 @@
                 </svg>
               </a>
               <!-- instagram -->
-              <a href="https://www.instagram.com/adib_setiaone02" target="_blank" class="w-9 h-9 mx-2 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://www.instagram.com/adib_setiaone02" target="_blank" class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -109,7 +109,7 @@
                 </svg>
               </a>
               <!-- github -->
-              <a href="https://github.com/adibSetiawann" target="_blank" class="w-9 h-9 mx-2 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://github.com/adibSetiawann" target="_blank" class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>GitHub</title>
                   <path
@@ -118,7 +118,11 @@
                 </svg>
               </a>
               <!-- youtube -->
-              <a href="https://www.youtube.com/channel/UCxItFlRBLqVSOB-bJhi1zag" target="_blank" class="w-9 h-9 mx-2 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a
+                href="https://www.youtube.com/channel/UCxItFlRBLqVSOB-bJhi1zag"
+                target="_blank"
+                class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>YouTube</title>
                   <path
@@ -134,42 +138,42 @@
     <!-- about section end -->
 
     <!-- Portfolio section start -->
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-200">
+    <section id="portfolio" class="bg-slate-200 pt-36 pb-16">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2 sm:text-4xl lg:text-5xl">Portfolio</h4>
-            <h2 class="font-bold text-dark text-2xl mb-2">Projek Terbaru</h2>
-            <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores dolore blanditiis facilis soluta nemo dolorum placeat veritatis corporis!</p>
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary sm:text-4xl lg:text-5xl">Portfolio</h4>
+            <h2 class="mb-2 text-2xl font-bold text-dark">Projek Terbaru</h2>
+            <p class="text-md font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores dolore blanditiis facilis soluta nemo dolorum placeat veritatis corporis!</p>
           </div>
         </div>
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/1.jpg" alt="" />
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Lorem ipsum dolor sit amet.</h3>
-              <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates suscipit consequuntur aliquam dolores nemo?</p>
+              <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Lorem ipsum dolor sit amet.</h3>
+              <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates suscipit consequuntur aliquam dolores nemo?</p>
             </div>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/2.jpg" alt="" />
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Lorem ipsum dolor sit amet.</h3>
-              <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates suscipit consequuntur aliquam dolores nemo?</p>
+              <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Lorem ipsum dolor sit amet.</h3>
+              <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates suscipit consequuntur aliquam dolores nemo?</p>
             </div>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/3.jpg" alt="" />
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Lorem ipsum dolor sit amet.</h3>
-              <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates suscipit consequuntur aliquam dolores nemo?</p>
+              <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Lorem ipsum dolor sit amet.</h3>
+              <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates suscipit consequuntur aliquam dolores nemo?</p>
             </div>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/4.jpg" alt="" />
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Lorem ipsum dolor sit amet.</h3>
-              <p class="font-medium text-base text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates suscipit consequuntur aliquam dolores nemo?</p>
+              <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Lorem ipsum dolor sit amet.</h3>
+              <p class="text-base font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates suscipit consequuntur aliquam dolores nemo?</p>
             </div>
           </div>
         </div>
@@ -177,27 +181,27 @@
     </section>
     <!-- Portfolio section end -->
     <!-- clients section start -->
-    <section id="clients" class="pt-36 pb-32 bg-slate-400">
+    <section id="clients" class="bg-slate-400 pt-36 pb-32">
       <div class="container">
         <div class="w-full px-4">
-          <div class="mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2 sm:text-4xl lg:text-5xl">Clients</h4>
-            <h2 class="font-bold text-white text-2xl mb-2">Yang pernah bekerja sama</h2>
-            <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores dolore nemo dolorum placeat veritatis corporis!</p>
+          <div class="mx-auto mb-16 text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary sm:text-4xl lg:text-5xl">Clients</h4>
+            <h2 class="mb-2 text-2xl font-bold text-white">Yang pernah bekerja sama</h2>
+            <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores dolore nemo dolorum placeat veritatis corporis!</p>
           </div>
         </div>
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
-            <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/clients/8.png" alt="test-samsung" />
             </a>
-            <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/clients/7.png" alt="test-samsung" />
             </a>
-            <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/clients/6.png" alt="test-samsung" />
             </a>
-            <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/clients/5.png" alt="test-samsung" />
             </a>
           </div>
@@ -206,41 +210,41 @@
     </section>
     <!-- clients section end -->
     <!-- blog section start -->
-    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+    <section id="blog" class="bg-slate-100 pt-36 pb-32">
       <div class="w-full px-4">
-        <div class="max-w-xl mx-auto text-center mb-16">
-          <h4 class="font-semibold text-lg text-primary mb-2 sm:text-4xl lg:text-5xl">Blog</h4>
-          <h2 class="font-bold text-dark text-2xl mb-2">Tulisan Terkini</h2>
-          <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores dolore blanditiis facilis soluta nemo.</p>
+        <div class="mx-auto mb-16 max-w-xl text-center">
+          <h4 class="mb-2 text-lg font-semibold text-primary sm:text-4xl lg:text-5xl">Blog</h4>
+          <h2 class="mb-2 text-2xl font-bold text-dark">Tulisan Terkini</h2>
+          <p class="text-md font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores dolore blanditiis facilis soluta nemo.</p>
         </div>
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg mb-10 overflow-hidden">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
               <img src="https://source.unsplash.com/360x200?programming" alt="programming" class="w-full" />
               <div class="py-8 px-6">
-                <h3><a href="#" target="_blank" rel="noopener noreferrer" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate"> Tips Belajar Programming</a></h3>
-                <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae accusamus perferendis quisquam?</p>
-                <a href="#" class="font-medium text-sm text-white bg-primary py-3 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                <h3><a href="#" target="_blank" rel="noopener noreferrer" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary"> Tips Belajar Programming</a></h3>
+                <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae accusamus perferendis quisquam?</p>
+                <a href="#" class="rounded-lg bg-primary py-3 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg mb-10 overflow-hidden">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
               <img src="https://source.unsplash.com/360x200?mountain" alt="programming" class="w-full" />
               <div class="py-8 px-6">
-                <h3><a href="#" target="_blank" rel="noopener noreferrer" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate"> Liburan ala Programmer</a></h3>
-                <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repudiandae consequuntur quas numquam omnis aspernatur reiciendis sapiente doloribus harum.</p>
-                <a href="#" class="font-medium text-sm text-white bg-primary py-3 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                <h3><a href="#" target="_blank" rel="noopener noreferrer" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary"> Liburan ala Programmer</a></h3>
+                <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repudiandae consequuntur quas numquam omnis aspernatur reiciendis sapiente doloribus harum.</p>
+                <a href="#" class="rounded-lg bg-primary py-3 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg mb-10 overflow-hidden">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
               <img src="https://source.unsplash.com/360x200?keyboard+mechanical" alt="programming" class="w-full" />
               <div class="py-8 px-6">
-                <h3><a href="#" target="_blank" rel="noopener noreferrer" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Review Keyboard Mechanical</a></h3>
-                <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat autem necessitatibus quibusdam perspiciatis ipsa temporibus reprehenderit, quaerat error libero rerum.</p>
-                <a href="#" class="font-medium text-sm text-white bg-primary py-3 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                <h3><a href="#" target="_blank" rel="noopener noreferrer" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary">Review Keyboard Mechanical</a></h3>
+                <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat autem necessitatibus quibusdam perspiciatis ipsa temporibus reprehenderit, quaerat error libero rerum.</p>
+                <a href="#" class="rounded-lg bg-primary py-3 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -252,28 +256,28 @@
     <section id="contact" class="pt-36 pb-32">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2 sm:text-4xl lg:text-5xl">Contact</h4>
-            <h2 class="font-bold text-dark text-2xl mb-2">Hubungi Saya</h2>
-            <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores dolore blanditiis facilis soluta nemo.</p>
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary sm:text-4xl lg:text-5xl">Contact</h4>
+            <h2 class="mb-2 text-2xl font-bold text-dark">Hubungi Saya</h2>
+            <p class="text-md font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores dolore blanditiis facilis soluta nemo.</p>
           </div>
         </div>
         <form>
-          <div class="w-full lg:w-2/3 lg:mx-auto">
-            <div class="w-full px4 mb-8">
+          <div class="w-full lg:mx-auto lg:w-2/3">
+            <div class="px4 mb-8 w-full">
               <label for="name" class="text-base font-bold text-primary">Nama</label>
-              <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+              <input type="text" id="name" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
             </div>
-            <div class="w-full px4 mb-8">
+            <div class="px4 mb-8 w-full">
               <label for="email" class="text-base font-bold text-primary">Email</label>
-              <input type="text" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+              <input type="text" id="email" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
             </div>
-            <div class="w-full px4 mb-8">
+            <div class="px4 mb-8 w-full">
               <label for="message" class="text-base font-bold text-primary">Pesan</label>
-              <textarea type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+              <textarea type="text" id="message" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
             </div>
             <div class="w-full px-4">
-              <button class="text-base font-semibold bg-primary text-white py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+              <button class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
             </div>
           </div>
         </form>
@@ -283,30 +287,30 @@
     <!-- footer start -->
     <footer class="bg-dark pt-24 pb-12">
       <div class="container">
-        <div class="flex flex-wrap lg:w-full px-10">
-          <div class="w-full px-4 mb-12 text-slate-300 md:w-1/3">
-            <h2 class="font-bold text-4xl text-white mb-5">Adib</h2>
-            <h3 class="font-bold text-2xl mb-2">Hubungi Saya</h3>
+        <div class="flex flex-wrap px-10 lg:w-full">
+          <div class="mb-12 w-full px-4 text-slate-300 md:w-1/3">
+            <h2 class="mb-5 text-4xl font-bold text-white">Adib</h2>
+            <h3 class="mb-2 text-2xl font-bold">Hubungi Saya</h3>
             <p>itsmeadib.s@gmail.com</p>
             <p>Jl. Urip Sumoharjo Np.231</p>
             <p>Pekalongan</p>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white">Kategori Tulisan</h3>
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="text-xl font-semibold text-white">Kategori Tulisan</h3>
             <ul class="text-slate-300">
-              <li >
+              <li>
                 <a href="#" class="inline-block text-base hover:text-primary">Programming</a>
               </li>
-              <li >
+              <li>
                 <a href="#" class="inline-block text-base hover:text-primary">Liburan</a>
               </li>
-              <li >
+              <li>
                 <a href="#" class="inline-block text-base hover:text-primary">Keyboard</a>
               </li>
             </ul>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white">Tautan</h3>
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="text-xl font-semibold text-white">Tautan</h3>
             <ul class="text-slate-300">
               <li>
                 <a href="#home" class="inline-block text-base hover:text-primary">Beranda</a>
@@ -326,10 +330,10 @@
             </ul>
           </div>
         </div>
-        <div class="w-full pt-10 border-t border-slate-700">
-          <div class="flex items-center justify-center mb-5">
+        <div class="w-full border-t border-slate-700 pt-10">
+          <div class="mb-5 flex items-center justify-center">
             <!-- facebook -->
-            <a href="https://www.facebook.com/adib.esteh23" target="_blank" class="w-9 h-9 mx-2 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <a href="https://www.facebook.com/adib.esteh23" target="_blank" class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Facebook</title>
                 <path
@@ -338,7 +342,7 @@
               </svg>
             </a>
             <!-- instagram -->
-            <a href="https://www.instagram.com/adib_setiaone02" target="_blank" class="w-9 h-9 mx-2 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <a href="https://www.instagram.com/adib_setiaone02" target="_blank" class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Instagram</title>
                 <path
@@ -347,7 +351,7 @@
               </svg>
             </a>
             <!-- github -->
-            <a href="https://github.com/adibSetiawann" target="_blank" class="w-9 h-9 mx-2 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <a href="https://github.com/adibSetiawann" target="_blank" class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitHub</title>
                 <path
@@ -356,7 +360,11 @@
               </svg>
             </a>
             <!-- youtube -->
-            <a href="https://www.youtube.com/channel/UCxItFlRBLqVSOB-bJhi1zag" target="_blank" class="w-9 h-9 mx-2 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <a
+              href="https://www.youtube.com/channel/UCxItFlRBLqVSOB-bJhi1zag"
+              target="_blank"
+              class="mx-2 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>YouTube</title>
                 <path
@@ -365,12 +373,19 @@
               </svg>
             </a>
           </div>
-          <p class="font-medium text-xs text-slate-500 text-center">Dibuat oleh <a href="https://github.com/adibSetiawann" class="font-bold text-primary" target="_blank" rel="noopener noreferrer"> Adib Setiawan</a>, menggunakan <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="text-bold text-sm text-sky-500"> Tailwind CSS 3</a></p>
+          <p class="text-center text-xs font-medium text-slate-500">
+            Dibuat oleh <a href="https://github.com/adibSetiawann" class="font-bold text-primary" target="_blank" rel="noopener noreferrer"> Adib Setiawan</a>, menggunakan
+            <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="text-bold text-sm text-sky-500"> Tailwind CSS 3</a>
+          </p>
         </div>
       </div>
     </footer>
     <!-- footer end -->
-
+    <!-- backdrop start -->
+    <a id="to-top" href="#home" class="fixed bottom-4 right-4 z-[999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse">
+      <span class="block h-5 w-5 rotate-45 border-t-2 border-l-2 mt-2"></span>
+    </a>
+    <!-- backdrop start -->
 
     <script src="dist/js/script.js"></script>
   </body>
