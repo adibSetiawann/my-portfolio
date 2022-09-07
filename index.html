@@ -9,10 +9,10 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <header class="absolute top-0 left-0 z-20 flex w-full items-center justify-center bg-transparent">
       <div class="container">
-        <div class="relative flex items-center justify-between">
-          <div class="px-4">
+        <div class="relative flex items-center justify-between px-0">
+          <div class="w-full px-4">
             <a href="#home" class="block py-6 text-lg font-bold text-primary">Adib Setiawan</a>
           </div>
           <div class="flex items-center px-4">
@@ -27,7 +27,7 @@
                   <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary">Beranda</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary">Tentang Saya</a>
+                  <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary">About</a>
                 </li>
                 <li class="group">
                   <a href="#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary">Portfolio</a>
@@ -41,10 +41,21 @@
                 <li class="group">
                   <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary">Contact</a>
                 </li>
+                <li class="flex items-center">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                  </div>
+                </li>
               </ul>
             </nav>
           </div>
-          <div class=""></div>
         </div>
       </div>
     </header>
@@ -383,10 +394,9 @@
     <!-- footer end -->
     <!-- backdrop start -->
     <a id="to-top" href="#home" class="fixed bottom-4 right-4 z-[999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse">
-      <span class="block h-5 w-5 rotate-45 border-t-2 border-l-2 mt-2"></span>
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
     </a>
     <!-- backdrop start -->
-    <!-- test -->
 
     <script src="dist/js/script.js"></script>
   </body>

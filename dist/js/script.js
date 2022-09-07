@@ -15,15 +15,15 @@ window.onscroll = () => {
 };
 
 const hamburger = document.querySelector("#hamburger");
-const navMenu = document.querySelector("#navmenu");
+const navMenu = document.getElementById("navmenu");
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("hamburger-active");
   navMenu.classList.toggle("hidden");
 });
 
-window.addEventListener("click", (e) => {
-  if (e.target != navMenu && e.target != hamburger) {
-    hamburger.classList.remove("hamburger-active");
-    navMenu.classList.add("hidden");
-  }
-});
+// window.addEventListener("click", (e) => {
+//   if (e.target != navMenu && e.target != hamburger) {
+//     hamburger.classList.remove("hamburger-active");
+//     navMenu.classList.add("hidden");
+//   }
+// });
