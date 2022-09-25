@@ -21,12 +21,12 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("hidden");
 });
 
-// window.addEventListener("click", (e) => {
-//   if (e.target != navMenu && e.target != hamburger) {
-//     hamburger.classList.remove("hamburger-active");
-//     navMenu.classList.add("hidden");
-//   }
-// });
+window.addEventListener("click", (e) => {
+  if (e.target != navMenu && e.target != hamburger) {
+    hamburger.classList.remove("hamburger-active");
+    navMenu.classList.add("hidden");
+  }
+});
 
 // dark toggle
 const darkToggle = document.querySelector("#dark-toggle");
@@ -50,3 +50,17 @@ if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.match
   document.documentElement.classList.remove("dark");
   darkToggle.checked = false;
 }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('animationshow')
+    } else {
+      entry.target.classList.remove('animationshow')
+    }
+  })
+})
+
+const hiddenElements = document.querySelectorAll('.animationhidden')
+hiddenElements.forEach((el) => observer.observe(el))
+
